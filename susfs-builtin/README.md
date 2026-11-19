@@ -1,6 +1,6 @@
 # 内置（builtin）SUSFS 集成
 
-本目录把 HTTP 404 式的手工打补丁流程固化成脚本：在官方 GKI 内核源码里**把 SUSFS 编译进内核**（`CONFIG_KSU=y` + `CONFIG_KSU_SUSFS=y`），而不是 LKM 外挂 `.ko`。
+本目录把 susfs4ksu 官方的“手工拷 patch + 逐条 patch”流程固化成脚本：在官方 GKI 内核源码里**把 SUSFS 编译进内核**（`CONFIG_KSU=y` + `CONFIG_KSU_SUSFS=y`），而不是 LKM 外挂 `.ko`。
 
 - 目标内核：`android13-5.15` GKI（Redmi K70 / vermeer，`5.15.194-android13-8-00019`）
 - 补丁源：[`simonpunk/susfs4ksu`](https://gitlab.com/simonpunk/susfs4ksu) 分支 `gki-android13-5.15`
